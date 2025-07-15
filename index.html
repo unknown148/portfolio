@@ -16,15 +16,21 @@
       background: #f9fafb;
       color: #333;
       line-height: 1.6;
+     }
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     img.profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
       border-radius: 50%;
-      margin-top: 1rem;
+      margin: 1rem 0;
       border: 4px solid white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     }
     header, section, footer {
       display: none;
@@ -136,12 +142,13 @@
   </style>
 </head>
 <body>
-  <header class="active">
-    <img src="pic.jpg" alt="Suryanshu Kumar" class="profile-pic">
-    <h1>Suryanshu Kumar</h1>
-    <p>Computer Science Student & Gandhi Fellow | Bridging Technology & Social Impact</p>
+   <header class="active">
+    <div class="profile-container">
+      <img src="pic.jpg" alt="Suryanshu Kumar" class="profile-pic">
+      <h1>Suryanshu Kumar</h1>
+      <p>Computer Science Student & Gandhi Fellow | Bridging Technology & Social Impact</p>
+    </div>
   </header>
-
   <nav>
     <a onclick="showPage('about')">About</a>
     <a onclick="showPage('skills')">Skills</a>
