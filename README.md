@@ -188,7 +188,7 @@
   <section id="resume">
     <h2>Resume</h2>
     <p>You can download my latest resume below:</p>
-    <a href="Suryanshu_Kumar_Resume.pdf" download class="resume-btn">Download Resume</a>
+    <a href="Suryanshu_Kumar_Resume. (1)pdf" download class="resume-btn">Download Resume</a>
   </section>
 
   <footer class="active">
