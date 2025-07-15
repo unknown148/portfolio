@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suryanshu Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      display: none;
+    }
+    section.active, header.active, footer.active {
+      display: block;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    header {
+      background: linear-gradient(to right, #2563eb, #1e40af);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/geometry.png');
+      opacity: 0.1;
+      z-index: 0;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1e3a8a;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+      cursor: pointer;
+    }
+    nav a:hover {
+      background-color: #374151;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .project {
+      background: white;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    .resume-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .resume-btn:hover {
+      background-color: #1e40af;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="active">
+    <h1>Suryanshu Kumar</h1>
+    <p>Computer Science Student & Gandhi Fellow | Bridging Technology & Social Impact</p>
+  </header>
+
+  <nav>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('skills')">Skills</a>
+    <a onclick="showPage('projects')">Projects</a>
+    <a onclick="showPage('experience')">Experience</a>
+    <a onclick="showPage('contact')">Contact</a>
+    <a onclick="showPage('resume')">Resume</a>
+  </nav>
+
+  <section id="about" class="active">
+    <h2>About Me</h2>
+    <p>I am a dedicated MCA student and Gandhi Fellow currently working with the Piramal Foundation under the Digital Bharat Collaborative. My background includes hands-on experience as a Junior ServiceNow Admin/Developer, where I customized ITSM modules and automated workflows.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Development: HTML, CSS, JavaScript</li>
+      <li>Platforms: ServiceNow, WordPress</li>
+      <li>Tools: MS Office, Google Workspace</li>
+      <li>Program Management, Stakeholder Engagement</li>
+      <li>Data Analysis & Reporting</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>ServiceNow ITSM Customization</h3>
+      <p>Customized Incident, Change, and Problem modules. Developed workflows, business rules, and scripts. Reduced incident resolution time by 20%.</p>
+    </div>
+    <div class="project">
+      <h3>Niramaya Project – Assam</h3>
+      <p>Improved healthcare access for 10,000+ residents by deploying tech-driven solutions and leading training programs in rural communities.</p>
+    </div>
+    <div class="project">
+      <h3>Utprerona App Implementation</h3>
+      <p>Facilitated ABHA ID registrations and trained health workers on the eHospital system under the Digital Bharat Collaborative.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <h4>Gandhi Fellow – Piramal Foundation (2024 – Present)</h4>
+    <ul>
+      <li>Facilitated ABHA ID creation and eHospital adoption with district health officials.</li>
+      <li>Trained healthcare staff and promoted digital health literacy.</li>
+    </ul>
+
+    <h4>ServiceNow Intern – CS Techom (2023)</h4>
+    <ul>
+      <li>Customized ITSM modules and created UI Policies, Scripts, and Catalog Items.</li>
+      <li>Managed user roles, ACLs, and platform security settings.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:suryanshu148@gmail.com">suryanshu148@gmail.com</a></p>
+    <p>Phone: +91 7903877613</p>
+    <p>Location: Patna, Bihar, India</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can download my latest resume below:</p>
+    <a href="Suryanshu_Kumar_Resume (1).pdf" download class="resume-btn">Download Resume</a>
+  </section>
+
+  <footer class="active">
+    <p>&copy; 2025 Suryanshu Kumar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('section, header, footer').forEach(el => el.classList.remove('active'));
+      document.getElementById(id)?.classList.add('active');
+      document.querySelector('header').classList.add('active');
+      document.querySelector('footer').classList.add('active');
+    }
+  </script>
+</body>
+</html>
